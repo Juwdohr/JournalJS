@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain} = require("electron");
 
 let win = null;
 
@@ -9,6 +9,7 @@ const createWindow = () => {
         resizeable: false,
         webPreferences: {
             nodeIntegration: true,
+            contextIsolation: false,
         }
     })
 
@@ -16,3 +17,8 @@ const createWindow = () => {
 }
 
 app.whenReady().then(createWindow);
+
+ipcMain.on('generatePassword', (event, data) => {
+    const randomPassword = data + Math.random().toString(36).substring(2, 5);
+    win.webContents.send('generatedPassword', randomPassword);
+})

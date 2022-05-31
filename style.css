@@ -1,0 +1,117 @@
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:300|Source+Code+Pro:500');
+:root {
+  --lime: #1E7B1E;
+  --lime-1: #6ABC6A;
+  --lime-2: #3B993B;
+  --lime-3: #075A07;
+  --lime-4: #003900;
+  
+  --strongorange: #9A5A25;
+  --strongorange-1: #EBB385;
+  --strongorange-2: #BF7F4A;
+  --strongorange-3: #713809;
+  --strongorange-4: #472000;
+  
+  --bluestone: #165C5C;
+  --bluestone-1: #508D8D;
+  --bluestone-2: #2D7272;
+  --bluestone-3: #064444;
+  --bluestone-4: #002B2B;
+  
+  --mandarianOrange: #9A2525;
+  --mandarianOrange-1: #EB8585;
+  --mandarianOrange-2: #BF4A4A;
+  --mandarianOrange-3: #700909;
+  --mandarianOrange-4: #470000;
+  
+  --grey: #969696;
+  --black: #000;
+  --white: #fff;
+
+  --code: 'Source Code Pro', monospace;
+  --serif: 'Roboto Slab', serif;
+  --sans: 'Roboto', sans-serif;
+  
+  font-size: 16px;
+}
+body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#root {
+  background: #969696;
+  background: var(--grey);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    height: 100vh;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end
+}
+.wrapper .markdwn, .wrapper .markup {
+        width: 45%;
+        border: 1px solid;
+        padding: 1em;
+        height: 80vh;
+        background: #fff;
+        background: var(--white);
+        margin-bottom: 1em;
+    }
+.wrapper .markdwn{}
+.wrapper .markup {
+        overflow-y: scroll;
+    }
+.wrapper textarea {
+        resize: none;
+    }
+pre {
+    border: 1px solid;
+    border-radius: 3px;
+    background: #508D8D;
+    background: var(--bluestone-1);
+    padding: .5em;
+} */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+input {
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+button {
+    margin: 20px;
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 7px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
